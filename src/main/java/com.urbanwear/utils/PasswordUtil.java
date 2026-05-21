@@ -8,38 +8,26 @@ public class PasswordUtil {
 
         try {
 
-            MessageDigest md =
-                    MessageDigest.getInstance("SHA-256");
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
 
-            byte[] hashedBytes =
-                    md.digest(password.getBytes());
+            byte[] hash = md.digest(password.getBytes());
 
-            StringBuilder sb =
-                    new StringBuilder();
+            StringBuilder sb = new StringBuilder();
 
-            for (byte b : hashedBytes) {
-
-                sb.append(
-                        String.format("%02x", b)
-                );
+            for (byte b : hash) {
+                sb.append(String.format("%02x", b));
             }
 
             return sb.toString();
 
         } catch (Exception e) {
-
-            e.printStackTrace();
-
-            return password;
+            throw new RuntimeException(e);
         }
     }
 
-    public static boolean verifyPassword(
-            String inputPassword,
-            String storedPassword
-    ) {
+    public static boolean checkPassword(String plainPassword,
+                                        String hashedPassword) {
 
-        return hashPassword(inputPassword)
-                .equals(storedPassword);
+        return hashPassword(plainPassword).equals(hashedPassword);
     }
 }

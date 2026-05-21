@@ -16,7 +16,6 @@
 
         <div class="dashboard-top">
             <div>
-                <span class="subtitle">Admin Panel</span>
                 <h1>Dashboard Overview</h1>
             </div>
 

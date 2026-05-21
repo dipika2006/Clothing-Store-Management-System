@@ -17,7 +17,8 @@ public class RegisterServlet extends HttpServlet {
     private final UserDao userDao = new UserDaoImpl();
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response)
             throws ServletException, IOException {
 
         request.getRequestDispatcher("/WEB-INF/views/register.jsp")
@@ -25,8 +26,9 @@ public class RegisterServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response)
+            throws IOException {
 
         String name = request.getParameter("name");
         String email = request.getParameter("email");
@@ -36,37 +38,27 @@ public class RegisterServlet extends HttpServlet {
                 || email == null || email.isBlank()
                 || password == null || password.isBlank()) {
 
-            request.setAttribute("error", "Please fill all fields.");
-
-            request.getRequestDispatcher("/WEB-INF/views/register.jsp")
-                    .forward(request, response);
+            response.sendRedirect(request.getContextPath() + "/register?error=invalid");
             return;
         }
 
         if (userDao.emailExists(email)) {
-            request.setAttribute("error", "Email already exists.");
-
-            request.getRequestDispatcher("/WEB-INF/views/register.jsp")
-                    .forward(request, response);
+            response.sendRedirect(request.getContextPath() + "/register?error=exists");
             return;
         }
 
         User user = new User();
-
         user.setName(name.trim());
         user.setEmail(email.trim());
         user.setPassword(PasswordUtil.hashPassword(password));
-        user.setRole("customer");
+        user.setRole("user");
 
-        boolean success = userDao.registerUser(user);
+        boolean registered = userDao.registerUser(user);
 
-        if (success) {
-            response.sendRedirect(request.getContextPath() + "/login?registered=success");
+        if (registered) {
+            response.sendRedirect(request.getContextPath() + "/login?success=registered");
         } else {
-            request.setAttribute("error", "Registration failed.");
-
-            request.getRequestDispatcher("/WEB-INF/views/register.jsp")
-                    .forward(request, response);
+            response.sendRedirect(request.getContextPath() + "/register?error=invalid");
         }
     }
 }

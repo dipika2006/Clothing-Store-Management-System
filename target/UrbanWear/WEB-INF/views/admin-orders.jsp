@@ -16,7 +16,6 @@
 
     <div class="admin-page-head">
       <div>
-        <span class="subtitle">Admin Panel</span>
         <h1>Customer Orders</h1>
       </div>
 

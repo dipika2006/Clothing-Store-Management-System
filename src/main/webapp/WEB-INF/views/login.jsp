@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +44,24 @@
                 <p class="auth-text">
                     Enter your details to continue.
                 </p>
+
+                <c:if test="${param.error eq 'invalid'}">
+                    <div class="auth-error">
+                        Invalid email or password.
+                    </div>
+                </c:if>
+
+                <c:if test="${param.error eq 'empty'}">
+                    <div class="auth-error">
+                        Please fill all fields.
+                    </div>
+                </c:if>
+
+                <c:if test="${param.success eq 'registered'}">
+                    <div class="auth-success">
+                        Registration successful. Please login.
+                    </div>
+                </c:if>
 
                 <form action="${pageContext.request.contextPath}/login"
                       method="post"

@@ -26,6 +26,64 @@
 
         </div>
 
+        <!-- FILTER BAR -->
+        <form action="${pageContext.request.contextPath}/products"
+              method="get"
+              class="filter-bar">
+
+            <div class="filter-group">
+                <label>Search Product</label>
+                <input type="text"
+                       name="search"
+                       value="${param.search}"
+                       placeholder="Search fashion products...">
+            </div>
+
+            <div class="filter-group">
+                <label>Category</label>
+                <select name="category">
+                    <option value="">All Categories</option>
+
+                    <option value="Men" ${param.category eq 'Men' ? 'selected' : ''}>
+                        Men
+                    </option>
+
+                    <option value="Women" ${param.category eq 'Women' ? 'selected' : ''}>
+                        Women
+                    </option>
+
+                    <option value="Kids" ${param.category eq 'Kids' ? 'selected' : ''}>
+                        Kids
+                    </option>
+
+                    <option value="Unisex" ${param.category eq 'Unisex' ? 'selected' : ''}>
+                        Unisex
+                    </option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Sort By</label>
+                <select name="sort">
+                    <option value="">Latest</option>
+
+                    <option value="low-high" ${param.sort eq 'low-high' ? 'selected' : ''}>
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low" ${param.sort eq 'high-low' ? 'selected' : ''}>
+                        Price: High to Low
+                    </option>
+                </select>
+            </div>
+
+            <button type="submit" class="filter-btn">
+                <i class="fas fa-filter"></i>
+                Filter
+            </button>
+
+        </form>
+
         <div class="product-grid">
 
             <c:forEach var="product" items="${products}">

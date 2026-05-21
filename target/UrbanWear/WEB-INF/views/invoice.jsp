@@ -15,7 +15,6 @@
   <div class="container">
 
     <div class="admin-hero">
-      <span class="admin-subtitle">Admin Panel</span>
 
       <c:choose>
         <c:when test="${reportMode}">

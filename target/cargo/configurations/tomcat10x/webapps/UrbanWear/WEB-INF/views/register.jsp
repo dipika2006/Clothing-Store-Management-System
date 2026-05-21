@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +44,18 @@
                 <p class="auth-text">
                     Fill all details to continue.
                 </p>
+
+                <c:if test="${param.error eq 'exists'}">
+                    <div class="auth-error">
+                        Email already exists.
+                    </div>
+                </c:if>
+
+                <c:if test="${param.error eq 'invalid'}">
+                    <div class="auth-error">
+                        Please enter valid details.
+                    </div>
+                </c:if>
 
                 <form action="${pageContext.request.contextPath}/register"
                       method="post"

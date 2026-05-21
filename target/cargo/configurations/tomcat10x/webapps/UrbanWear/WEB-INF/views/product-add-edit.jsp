@@ -15,9 +15,7 @@
     <div class="container">
 
         <div class="admin-hero">
-            <span class="admin-subtitle">Admin Panel</span>
             <h1>Product Management</h1>
-            <a href="${pageContext.request.contextPath}/dashboard">← Dashboard</a>
         </div>
 
         <div class="product-management-grid">
