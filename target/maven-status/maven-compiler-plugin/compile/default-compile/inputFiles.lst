@@ -1,30 +1,44 @@
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\dao\UserDAO.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\dao\OrderItemDAO.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\admin\AdminController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\service\OrderService.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\entity\Product.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\service\UserService.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\dao\OrderDAO.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\exception\CustomException.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\auth\LoginController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\cart\CartController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\filter\AuthFilter.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\utils\PasswordUtil.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\user\DashboardController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\user\HomeController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\entity\User.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\entity\OrderItem.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\auth\RegisterController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\dao\CategoryDAO.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\filter\AdminFilter.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\order\OrderController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\utils\DBConnection.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\entity\Order.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\entity\Category.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\service\ProductService.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\dao\ProductDAO.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\service\AuthService.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\order\CheckoutController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\utils\ValidationUtil.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\controller\product\ProductController.java
-C:\Users\thapa\OneDrive\Desktop\UrbanWear\src\main\java\service\AdminService.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\AboutServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\AdminFeedbackServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\AdminOrderDetailServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\AdminOrderServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\AdminProductServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\CartServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\CheckoutServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\ContactServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\DashboardServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\FeedbackServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\filter\AdminFilter.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\filter\AuthenticationFilter.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\HomeServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\InvoiceServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\LoginServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\LogoutServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\OrderServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\ProductDetailServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\ProductServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\ProfileServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\controller\RegisterServlet.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\CategoryDao.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\CategoryDaoImpl.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\DashboardDao.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\DashboardDaoImpl.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\FeedbackDao.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\FeedbackDaoImpl.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\OrderDao.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\OrderDaoImpl.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\ProductDao.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\ProductDaoImpl.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\UserDao.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\dao\UserDaoImpl.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\CartItem.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\Category.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\Feedback.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\Order.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\OrderItem.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\Product.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\entity\User.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\utils\DatabaseConnection.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\utils\PasswordUtil.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\utils\SessionUtil.java
+D:\Coursework\Coursework 4th Semister\Advanced Programming & Technologies\UrbanWear\src\main\java\com.urbanwear\utils\ValidationUtil.java
